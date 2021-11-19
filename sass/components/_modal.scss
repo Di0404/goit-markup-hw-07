@@ -129,15 +129,13 @@
   display: block;
 }
 
-.check-text {
-  font-weight: 400;
-  color: #757575;
-}
 .check-link {
   color: var(--accent-color);
   text-decoration: underline;
 }
-.input-check {
+.check-text {
+  font-weight: 400;
+  color: #757575;
   display: flex;
 }
 .check-text {
@@ -154,11 +152,11 @@
   }
 }
 
-.check-text {
-  display: flex;
-}
 .icon-check {
   fill: var(--white-color);
+}
+.input-check {
+  display: flex;
 }
 .input-check {
   &:checked {
