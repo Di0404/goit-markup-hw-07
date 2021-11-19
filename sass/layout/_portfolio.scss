@@ -10,8 +10,10 @@
 .part-item {
   display: inline-block;
 }
-.part-item:not(:last-child) {
-  margin-right: 8px;
+.part-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 .project-button {
   font-family: Roboto, sans-serif;
@@ -31,10 +33,15 @@
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project-button:hover,
-.project-button:focus {
-  color: var(--white-color);
-  background-color: var(--accent-color);
+.project-button {
+  &:hover {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color);
+  }
 }
 .project-list-container {
   padding: 20px 24px;
@@ -63,8 +70,12 @@
   flex-basis: 294px;
   /* тоже самое что weight */
 }
-.project-item:hover .project-top-text {
-  transform: translateY(0);
+.project-item {
+  &:hover {
+    .project-top-text {
+      transform: translateY(0);
+    }
+  }
 }
 .project-img-wrapp {
   position: relative;
@@ -96,13 +107,24 @@
   font-weight: 400;
 }
 
-.project-button:hover,
-.project-button:focus {
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+.project-button {
+  &:hover {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
+  &:focus {
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+      0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  }
 }
-.project-item:focus,
-.project-item:hover {
-  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    0px 1px 1px rgba(0, 0, 0, 0.12);
+
+.project-item {
+  &:focus {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
+  &:hover {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }

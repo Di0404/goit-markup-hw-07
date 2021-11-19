@@ -8,9 +8,12 @@
   margin-bottom: 50px;
 }
 
-.job-item:not(:last-child) {
-  margin-right: 30px;
+.job-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
+
 .job-list {
   display: flex;
 }

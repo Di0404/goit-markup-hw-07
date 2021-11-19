@@ -23,8 +23,10 @@
   display: none;
 }
 
-.feauters-item:not(:last-child) {
-  margin-right: 30px;
+.feauters-item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .feauters-text {
